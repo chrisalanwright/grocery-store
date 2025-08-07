@@ -72,6 +72,7 @@ function getItemPriceByName(items, name) {
  */
 function getItemsByCategory(items, category) {
   return items.filter((item) => item.category === category);
+  //Again this works but I'm unsure if what's needed is just name or full array.
 }
 
 /**
@@ -79,9 +80,7 @@ function getItemsByCategory(items, category) {
  * @returns {number} the total quantity of all items
  */
 function countItems(items) {
-  let total = items.reduce((total, item) => total + item.quantity, 0);
-  return total;
-  // TODO: use `reduce`
+  return items.reduce((total, item) => total + item.quantity, 0);
 }
 
 /**
