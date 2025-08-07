@@ -46,6 +46,7 @@ function getUppercaseNames(items) {
  */
 function getItemById(items, id) {
   return items.find((item) => item.id === id);
+  //Unsure about this one, works but it returns the entire item not just the name.
   //const itemId = prompt("Enter the ID of an item:", "1");
   // console.log(`The item with id #${itemId} is:`);
   // console.log(getItemById(inventory, +itemId));
@@ -62,7 +63,6 @@ function getItemPriceByName(items, name) {
       return item.price;
     }
   }
-  return undefined;
 }
 
 /**
